@@ -13,7 +13,7 @@ var lorem = new LoremIpsum({
     max: 16,
     min: 4
   }
-});
+
 
 app.get('/', (req, res) => res.send(lorem.generateParagraphs(7)))
 
