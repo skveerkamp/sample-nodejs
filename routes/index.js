@@ -26,11 +26,6 @@ function randomArticle(seed) {
   return articles[Math.floor(generator.random() * articles.length)];
 }
 
-(function main(counter){
-    console.log(counter);
-    setTimeout(main,0,counter+1);
-})(0);
-
 function randomNoun(seed) {
   var MersenneTwister = require('mersenne-twister');
   var generator = new MersenneTwister(seed);
