@@ -14,7 +14,12 @@ var lorem = new LoremIpsum({
     min: 4
   }
 
+while (true) {
+    //your code
+
 
 app.get('/', (req, res) => res.send(lorem.generateParagraphs(7)))
+
+}
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
